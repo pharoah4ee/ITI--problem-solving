@@ -1,18 +1,40 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int N;
-    cin >> N;
+    int a, b, c;
+    cin >> a >> b >> c;
 
-    int years = N / 365;
-    int remaining_days = N % 365;
-    int months = remaining_days / 30;
-    int days = remaining_days % 30;
 
-    cout << years << " years" << endl;
-    cout << months << " months" << endl;
-    cout << days << " days" << endl;
+    int min_val = a;
+    if (b < min_val) {
+        min_val = b;
+    }
+    if (c < min_val) {
+        min_val = c;
+    }
+
+    int max_val = a;
+    if (b > max_val) {
+        max_val = b;
+    }
+    if (c > max_val) {
+        max_val = c;
+    }
+
+    int mid_val = (a + b + c) - min_val - max_val;
+
+
+    cout << min_val << endl;
+    cout << mid_val << endl;
+    cout << max_val << endl;
+
+    cout << endl;
+
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
 
     return 0;
 }
