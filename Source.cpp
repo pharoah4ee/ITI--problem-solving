@@ -1,26 +1,24 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-int main()
 
-{
-    char x;
-    cin >> x;
+int main() {
+    int N;
+    cin >> N;
 
-    if (x >= '0' && x <= '9') {
-        cout << "IS DIGIT" << endl;
-    }
+    int years = N / 365;
+    int remaining_days = N % 365;
+    int months = remaining_days / 30;
+    int days = remaining_days % 30;
 
-    else {
-        cout << "ALPHA" << endl;
-
-        if (x >= 'A' && x <= 'Z') {
-            cout << "IS CAPITAL" << endl;
-        }
-
-        else {
-            cout << "IS SMALL" << endl;
-        }
-    }
+    cout << years << " years" << endl;
+    cout << months << " months" << endl;
+    cout << days << " days" << endl;
 
     return 0;
 }
+
+
+
+
+
+
