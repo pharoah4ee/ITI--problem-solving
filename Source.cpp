@@ -1,20 +1,15 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main() {
-    string F1, S1;
-    cin >> F1 >> S1;
-
-    string F2, S2;
-    cin >> F2 >> S2;
-
-    if (S1 == S2) {
-        cout << "ARE Brothers" << endl;
+    int A, B;
+    cin >> A >> B;
+    if (A >= B) {
+        cout << "Yes" << endl;
     }
     else {
-        cout << "NOT" << endl;
+        cout << "No" << endl;
     }
 
     return 0;
