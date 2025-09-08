@@ -1,15 +1,25 @@
-#include <iostream>
-
+# include <iostream>
 using namespace std;
+int main()
 
-int main() {
-    int A, B;
-    cin >> A >> B;
-    if (A >= B) {
-        cout << "Yes" << endl;
+{
+    char x;
+    cin >> x;
+
+    if (x >= '0' && x <= '9') {
+        cout << "IS DIGIT" << endl;
     }
+
     else {
-        cout << "No" << endl;
+        cout << "ALPHA" << endl;
+
+        if (x >= 'A' && x <= 'Z') {
+            cout << "IS CAPITAL" << endl;
+        }
+
+        else {
+            cout << "IS SMALL" << endl;
+        }
     }
 
     return 0;
