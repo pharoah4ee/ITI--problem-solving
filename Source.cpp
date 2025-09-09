@@ -2,23 +2,25 @@
 using namespace std;
 int main()
 {
-	int max = -999999;
+
 	int num;
-	int num1;
-	cout << "please enter the number";
+	int val;
+
+	cout << "please enter the number of loops";
 	cin >> num;
-	cout << "please enter the numbers";
-	for (int i= 0; i < num; i++)
+	cout << "please enter the inputs";
+	for (int i = 0; i < num; i++)
 	{
-		cin >> num1;
-		if (num1 > max)
-		{
-			max = num1;
-		}
+		cin >> val;
 	}
-	
-	
-	cout << "MAX:" << max;
+	if (val == 1999)
+	{
+		cout << " correct";
+	}
+	else
+	{
+		cout << "wrong";
+	}
 
 	return 0;
 }
