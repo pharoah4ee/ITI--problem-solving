@@ -1,21 +1,26 @@
-#include <iostream>
+# include<iostream>
 using namespace std;
-
-int main() 
+int main()
 {
-    int n;
-    cin >> n;
 
-    if (n < 2) 
-    {
-        cout << -1 << endl;
-        return 0;
-    }
+	int num;
+	int val;
 
-    for (int i = 2; i <= n; i += 2)
-    {
-        cout << i << endl;
-    }
+	cout << "please enter the number of loops";
+	cin >> num;
+	cout << "please enter the inputs";
+	for (int i = 0; i < num; i++)
+	{
+		cin >> val;
+	}
+	if (val == 1999)
+	{
+		cout << " correct";
+	}
+	else
+	{
+		cout << "wrong";
+	}
 
-    return 0;
+	return 0;
 }
